@@ -1,9 +1,3 @@
-body {
-   background-color: var(--bg-color);
-
-   transition: background-color, 1s, ease;
-}
-
 :root
 {
     --bg-color: aqua;
