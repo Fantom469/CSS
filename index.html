@@ -4,87 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="styles.css">
-    <title>Chessboard</title>
+    <style>
+         .container {
+            display: grid;
+            grid-template-columns: 300px auto minmax(200px, 300px);
+            grid-template-rows: repeat(3, 100px);
+            grid-auto-rows: 70px;
+            gap: 10px
+         } 
+
+       
+         .item {
+            display: flex;
+            color: white;
+            background-color: #465f68;
+            border: 1px white solid;
+            justify-content: center;
+            align-items: center;
+         } 
+        
+
+
+    </style>
+    <title>Grid Layout</title>
 </head>
 
 <body>
-<div class="chessboard">
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass  squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
+    <div class="container">
+        <div class="item">300px x 100px</div>
+        <div class="item">😎 ??? x 100px</div>
+        <div class="item">200px — 300px x 100px</div>
+        <div class="item">300px x 100px</div>
+        <div class="item">😎 ??? x 100px</div>
+        <div class="item">200px — 300px x 100px</div>
+        <div class="item">300px x 100px</div>
+        <div class="item">😎 ??? x 100px</div>
+        <div class="item">200px — 300px x 100px</div>
 
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass  squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass  squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass  squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-    <div class="blackclass squre"></div>
-    <div class="whiteclass squre"></div>
-
+        <div class="item">🤪 300px x 70px</div>
     </div>
-   
 </body>
 
 </html>
