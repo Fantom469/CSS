@@ -4,45 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-         .container {
-            display: grid;
-            grid-template-columns: 300px auto minmax(200px, 300px);
-            grid-template-rows: repeat(3, 100px);
-            grid-auto-rows: 70px;
-            gap: 10px
-         } 
-
-       
-         .item {
-            display: flex;
-            color: white;
-            background-color: #465f68;
-            border: 1px white solid;
-            justify-content: center;
-            align-items: center;
-         } 
-        
-
-
-    </style>
     <title>Grid Layout</title>
+    <style>
+       .header, .footer 
+       {
+           background-color: gray;
+           height: 80px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-size: 18px;
+           font-family:'Times New Roman', Times, serif;
+           padding: 10px;
+           
+           
+       }
+
+       .aside
+       {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         background-color: gray;
+        font-size: 18px;
+        padding: 20px;
+       }
+
+       .item
+       {
+         font-size: 16;
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight:600;
+         background-color: white;
+       }
+
+       .main
+       {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 10px;
+        width: 200vh;
+        margin-top: 5px;
+       }
+
+       .section
+       {
+         background-color: gray;
+         height: 700px;
+         margin-bottom: 5px;
+         text-align: center;
+         padding: 10px;
+         
+       }
+
+       .main_section{
+           display: flex;
+           flex-direction: row;
+           gap: 10px;
+       }
+
+       @media (max-width: 700px) {
+         .main
+         {
+            grid-template-columns: 1fr;
+         }
+       }
+           
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="item">300px x 100px</div>
-        <div class="item">😎 ??? x 100px</div>
-        <div class="item">200px — 300px x 100px</div>
-        <div class="item">300px x 100px</div>
-        <div class="item">😎 ??? x 100px</div>
-        <div class="item">200px — 300px x 100px</div>
-        <div class="item">300px x 100px</div>
-        <div class="item">😎 ??? x 100px</div>
-        <div class="item">200px — 300px x 100px</div>
-
-        <div class="item">🤪 300px x 70px</div>
+    <div class="header">Header</div>
+    <div class="main_section">
+    <div class="aside">Side Panel
+        <div class="item">Panel section 1</div>
+        <div class="item">Panel section 2</div>
+        <div class="item">Panel section 3</div>
     </div>
+    <div class="main">
+        <div class="section">Content Section 1</div>
+        <div class="section">Content Section 2</div>
+        <div class="section">Content Section 3</div>
+    </div>
+    </div>
+    <div class="footer">Footer</div>
 </body>
 
 </html>
